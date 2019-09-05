@@ -11,18 +11,18 @@
         <input type="text" v-model='word'>
         <p>{{word}}</p>
     </div>
-    <script src="./mvvm.js"></script>
-    <script src="./observer.js"></script>
-    <script src="./compiler.js"></script>
-    <script src="./watcher.js"></script>
+    <script src="./js/mvvm.js"></script>
+    <script src="./js/observer.js"></script>
+    <script src="./js/compiler.js"></script>
+    <script src="./js/watcher.js"></script>
     <script>
         let vm = new MVVM({
             el: '#demo',
             data: {
-                word: 'Hello World!'
+                word: 'Hello World!',
+                b: 'adf'
             }
         })
-        console.log(vm)
     </script>
 </body>
 </html>
